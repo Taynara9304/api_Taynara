@@ -9,16 +9,41 @@
 </head>
 <body>
     <div class="container">
-        <h1>Faça Login</h1>
+        <h1>Cadastre-se</h1>
         <form id="form" action="post">
-            <label for="email">Digite seu email</label>
-            <input type="email" name="email" id="email">
+            <div class="input">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Digite seu email">
+            </div>
+            <div class="input">
+                <label for="email">Senha</label>
+                <input type="password" name="senha" id="senha" placeholder="Digite sua senha">
+            </div>
+
+            <div class="input">
+                <label for="cep">CEP</label>
+                <input type="text" name="cep" id="cep" placeholder="Digite seu CEP">
+
+                <label for="rua">Rua</label>
+                <input type="text" name="rua" id="rua" placeholder="Digite o nome da sua rua">
+
+                <label for="rua">Número da casa</label>
+                <input type="text" name="num" id="num" placeholder="Digite o nome da sua rua">
+
+                <label for="rua">API Estado</label>
+                <input type="text" name="estado" id="estado" placeholder="Digite o nome da sua rua">
+
     
-            <label for="email">Digite sua senha</label>
-            <input type="password" name="senha" id="senha">
-                        
+                <label for="rua">Cidade</label>
+                <input type="text" name="cidade" id="cidade" placeholder="Digite o nome da sua rua">
+
+                <label for="rua">Bairro</label>
+                <input type="text" name="bairro" id="bairro" placeholder="Digite o nome da sua rua">
+
+            </div>
+            <label for="mapa">Selecione seu endereço</label>
             <div id="mapa"></div>
-            <button type="submit" id="enviar">Enviar</button>
+            <button type="submit" id="enviar" onclick="consultarCEP()">Enviar</button>
         </form>
         
     </div>
